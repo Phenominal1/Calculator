@@ -29,9 +29,6 @@ function App() {
     
   }
 
-  function percentHandler(){
-    setResult( result * (result/100));
-  }
 
   return (
     
@@ -58,7 +55,7 @@ function App() {
             <button className="highlight" name='2' onClick={clickHandler}>2</button>
             <button className="highlight" name='3' onClick={clickHandler}>3</button> 
             <button className="highlight" name='+' onClick={clickHandler}>+</button>
-            <button className="highlight" name='%' onClick={percentHandler}>%</button> 
+            <button className="highlight" name='%' onClick={clickHandler}>%</button> 
             <button className="highlight" name='0' onClick={clickHandler}>0</button>
             <button className="highlight" name='.' onClick={clickHandler}>.</button>
             <button className="highlight" onClick={answeHandler}>=</button>
